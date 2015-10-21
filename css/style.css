@@ -1,0 +1,275 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+}
+body{
+	background: #1a4e7c url("../images/layout/bg_mask_op.png") repeat;
+}
+.wrapper{
+	margin: 0 auto;
+	width: 1140px;
+}
+.header{
+	height: 150px;
+	background: #1a4e7c url("../images/layout/header_bg.jpg") no-repeat;
+}
+.logo {
+	float:left;
+	height: 65px;
+	width: 350px;
+	margin: 55px 0 0 21px;
+	background: url("../images/layout/logo.png") no-repeat;
+}
+ul li{
+	list-style-type: none;
+}		
+a{
+	outline: none;
+	text-decoration: none;
+}
+.header-navigation ul li a {
+	display: block;
+}
+.header-navigation {
+	float: right;
+	margin: 80px 0 0 0;
+}
+.header-navigation a {
+	padding: 15px 15px 15px 15px;
+	text-align: center;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	font-family: "Roboto";
+	font-size: 15px;
+	color: rgb(255, 255, 255);
+	text-shadow: 0.5px 0.866px 1px rgba(6, 6, 6, 0.27);
+}
+.header-navigation a:hover{
+	background-color: #568cbc;
+}
+.header-navigation li {
+	display:  inline-block;
+	float: left;
+	border-right: 1px solid #0c3559;
+}
+.header-navigation li:last-child{
+	border-left: 1px solid #0c3559;
+	border: none;
+}
+.main:before {
+	content: " ";
+	display: block;
+	background: url("../images/layout/top_border.png") no-repeat;
+	/*margin: -10px -2px 0 0px;*/
+	content: " ";
+	display: block;
+	width:100%;
+ height: 10px;
+}
+.main{
+	background: url("../images/layout/bg_repeat.png") repeat-y;
+	float: left;
+	margin: 0px -2px;
+	/*background-color: #ffffff;*/
+	font-family: "Roboto";
+}
+.main:after {
+	content: " ";
+	display: block;
+	background: url("../images/layout/bottom_border.png") no-repeat;
+	/*margin: -10px -2px 0 0px;*/
+	/*border: 1px solid red;*/
+	content: " ";
+	display: block;
+	float: left;
+	width:100%;
+ 	height: 10px;
+}
+.main  h1{
+	/*font-family: "Roboto";*/
+	color: rgb(24, 71, 113);
+	font-size: 40px;
+	padding: 30px 0 30px 0;
+	text-align: center;
+}
+.main-top {
+	margin: 5px 30px 5px 30px;/* доделать тянет за собой <p> меню - разделить классы?*/
+	border-bottom: 1px solid #f0f0f0;
+	padding-bottom: 37px;
+}
+.main  p{
+	font: 100 24px Roboto;/* доделать тянет за собой <p> меню - разделить классы?*/
+	color: rgb(24, 71, 113);
+	text-align: center;
+}
+.main-menu-wrapper {
+	margin: 0 0px 0 30px;
+	padding: 40px 0px 20px 0px;
+	float:left;
+}
+.main-menu {
+	float: left;
+	margin: 0px 30px 20px 0px;
+	border: 1px solid rgb(223, 223, 223); 
+	border-radius: 2px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 1px 1px 0px rgba(2, 3, 3, 0.06);
+	width: 190px;
+	height: 279px;
+}
+.main-menu-title {
+	width: 190px;
+	height: 91px;
+	border-bottom: 1px solid rgb(223, 223, 223);
+	background: url("../images/layout/main-menu-title-bg.png") repeat-x;
+	overflow: hidden;
+}
+.main-menu-title p{
+	font: 700 24px  "Roboto";
+	color: rgb(60, 110, 154);
+	line-height: 1.2;
+	text-align: center;
+	padding: 10px 15px 0 15px;
+}
+.main-menu-img {
+	display: table;
+	width: 100%;
+	height: 112px;
+	border-bottom: 1px solid rgb(223, 223, 223);
+	text-align: center;
+}
+.main-menu-img-logo {
+	display: table-cell;
+	/*max-width: 66px;*/
+	/*max-height: 66px;*/
+	vertical-align: middle;
+}
+.main-menu-img-logo img{
+	max-width: 66px;
+	max-height: 66px;
+}
+.main-menu-button-wrapper {
+	display: table;
+	
+	width: 100%;
+	height: 74px;
+	background-color: rgb(235, 242, 247);
+	text-align: center;
+}
+.main-menu-button {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 5px 5px 5px 5px;
+	overflow: hidden; 									/*не работает*/
+	max-height: 66px;
+}
+.main-menu-button a{
+	padding: 15px 15px 15px 15px;
+	font: 17px "Roboto";
+	color: rgb(255, 255, 255);
+	text-shadow: 0.5px 0.866px 1px /*rgba(80, 132, 184, 0.004)*/;
+	text-align: center;
+	/*overflow: hidden;*/ 							/*не работает*/
+	max-width: 106px;								 /*не работает*/
+	max-height: 66px;								 /*не работает*/
+	border-radius: 2px;
+	background-image: -moz-linear-gradient( 90deg, rgb(86,140,188) 0%, rgb(112,164,211) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(86,140,188) 0%, rgb(112,164,211) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(86,140,188) 0%, rgb(112,164,211) 100%);
+	box-shadow: 0px 2px 0px 0px rgba(43, 96, 143, 0.004),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.95);
+}
+.main-article {
+	background-color:#f3f7f9;
+	float: left;
+	margin: 0 2px 0 2px;
+}
+.main-article-top-border {
+	border-top: 1px solid #cfdde5;
+	background: url("../images/layout/page-bottom-top-border.png") repeat-x;
+	width: 1140px;
+  height: 20px;
+ }
+h2 {
+	font: 600 40px "Roboto";
+	color: rgb(23, 70, 111);
+	padding-top: 25px;
+	line-height: 1.25;
+	text-align: center;
+}
+.main-article p {
+	font: 19px "Roboto";
+	color: rgb(23, 70, 111);
+	padding: 15px;
+	line-height: 1.895;
+	text-align: center;
+ }
+.footer {
+	float: left;
+	width: 100%;
+	margin: 0;
+	height: 150px;
+	background: #1a4e7c url("../images/layout/footer_bg.jpg") no-repeat;
+	padding-top: 15px;
+}
+.copyright {
+	float: left;
+	font-family: "Roboto";
+	color: rgb(145, 175, 201);
+	text-align: left;
+	text-shadow: 0.5px 0.866px 3px rgba(6, 6, 6, 0.33);
+	padding:0 0 0 30px;
+ }
+.social {
+	float: left;
+	height: 24px;
+	width: 153px;
+	background: url("../images/layout/social.jpg") no-repeat;
+}
+.social-logo {
+	float: left;
+}
+.footer-navigation ul li a {
+	display: block;
+}
+.footer-navigation {
+	float: right;
+	margin: 0px 0 0 0;
+}
+.footer-navigation a {
+	font: 13px "Roboto";
+	color: rgb(145, 175, 201);
+	text-shadow: 0.5px 0.866px 3px rgba(6, 6, 6, 0.33);
+	padding: 10px 15px 10px 15px;
+	text-align: center;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
+.footer-navigation li {
+	display:  inline-block;
+	margin: 0;
+	float: left;
+	border-right: 1px solid rgb(145, 175, 201);
+
+}
+.footer-navigation li:last-child{
+	border-left: 1px solid #0c3559;
+	border: none;
+}
+.footer-navigation a:hover{
+	background-color: #568cbc;
+}
+a:active{
+	color: #c60101;
+}
+a:visited{
+	color: #c60101;
+}	
+img{	
+	border: 0;
+}
